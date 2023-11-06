@@ -16,13 +16,14 @@ let buttonContinue = document.querySelector('.button');
 
 //MOSTRAR CUANDO LA PÁGINA ESTÉ CARGADA
 
-function randomValues(){
+buttonContinue.addEventListener('click', function randomValues(){
+    
     let values = [];
     for (let i=1; i<=4; i++){
         let randomNumbers = Math.round(Math.random()*100);
         values.push(randomNumbers);
     }
-    console.log(values);
+
     values.forEach((value,index) => {
         switch(index){
         case 0: 
@@ -48,33 +49,41 @@ function randomValues(){
     }, 0)
 
     const result = Math.round(media/4);
-    stateRange.innerHTML = result;
+    stateRange.innerText = result;
 
     if (result >= 75){
         resultComponent.classList.add('result-component');
         numbersContainer.classList.add('numbers');
         resultComponent.classList.remove('result-component-warning', 'result-component-danger');
+        numbersContainer.classList.remove('numbers-warning', 'numbers-danger');
         stateRange.innerText = result;
-        status.innerText = 'Excelente';
-        paragraph.innerText = '¡Felicidades! Eres una persona con una excelente memoria, reacción, verbal y visual. ¡Sigue así!';
+        status.innerText = 'Excelent';
+        paragraph.innerText = '¡Congratulations! You are a person with excellent results.';
     }
 
     if (result <= 74 && result >= 43){
         resultComponent.classList.add('result-component-warning');
         numbersContainer.classList.add('numbers-warning');
         resultComponent.classList.remove('result-component', 'result-component-danger');
+        numbersContainer.classList.remove('numbers', 'numbers-danger');
         stateRange.innerText = result;
         status.innerText = 'Normal';
-        paragraph.innerText = 'Estás en el rango normal de personas';
+        paragraph.innerText = 'You are in the normal range of people';
     }
     if (result <= 42){
         resultComponent.classList.add('result-component-danger');
         numbersContainer.classList.add('numbers-danger');
         resultComponent.classList.remove('result-component', 'result-component-warning');
+        numbersContainer.classList.remove('numbers-warning', 'numbers');
         stateRange.innerText = result;
-        status.innerText = 'Grave';
-        paragraph.innerText = 'Estás en el rango grave y debes revisar tus valores';
+        status.innerText = 'Serious';
+        paragraph.innerText = 'You are in the serious range and you should review your values';
     }
-}
 
-window.addEventListener('load', randomValues)
+    window.addEventListener('load', randomValues);
+
+})
+
+
+
+
