@@ -1,0 +1,135 @@
+section.result-component {
+  width: inherit;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #6040FD, #1612df);
+}
+
+section.result-component-warning {
+  width: inherit;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #ffba08, #f48c06);
+}
+
+section.result-component-danger {
+  width: inherit;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #d00000, #6a040f);
+}
+
+.result-component-title h2{
+  margin: 0;
+  color: #CAC4FF;
+  /* color: #B9A9FD; */
+}
+
+.result-component-numbers{
+  width: 100%;
+}
+
+.result-component-numbers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  border-radius: 50%;
+  background:linear-gradient(to bottom, #4B23CA, #5C45ED);
+  color: #B9A9FD;
+  font-weight: bold;
+}
+
+.numbers-warning {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ffba08, #f48c06);
+  color: #B9A9FD;
+  font-weight: bold;
+}
+
+.numbers-danger {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #d00000, #6a040f);
+  color: #B9A9FD;
+  font-weight: bold;
+}
+
+.numbers span:nth-child(1) {
+  font-family: "Rubik";
+  font-size: 68px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.numbers-warning span:nth-child(1) {
+  font-family: "Rubik";
+  font-size: 68px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.numbers-danger span:nth-child(1) {
+  font-family: "Rubik";
+  font-size: 68px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.result-component-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.result-component-status .status {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.result-component-paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.result-component-paragraph p{
+  width: 75%;
+  margin: 0;
+  color: #CAC4FF;
+  font-family: "Rubik";
+  line-height: 22px;
+}
