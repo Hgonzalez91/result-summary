@@ -55,7 +55,7 @@ function randomValues(){
         numbersContainer.classList.add('numbers');
         resultComponent.classList.remove('result-component-warning', 'result-component-danger');
         stateRange.innerText = result;
-        statusRandom.innerText = 'Excelente'
+        status.innerText = 'Excelente';
         paragraph.innerText = '¡Felicidades! Eres una persona con una excelente memoria, reacción, verbal y visual. ¡Sigue así!';
     }
 
@@ -64,7 +64,7 @@ function randomValues(){
         numbersContainer.classList.add('numbers-warning');
         resultComponent.classList.remove('result-component', 'result-component-danger');
         stateRange.innerText = result;
-        statusRandom.innerText = 'Normal'
+        status.innerText = 'Normal';
         paragraph.innerText = 'Estás en el rango normal de personas';
     }
     if (result <= 42){
@@ -72,7 +72,7 @@ function randomValues(){
         numbersContainer.classList.add('numbers-danger');
         resultComponent.classList.remove('result-component', 'result-component-warning');
         stateRange.innerText = result;
-        statusRandom.innerText = 'Grave'
+        status.innerText = 'Grave';
         paragraph.innerText = 'Estás en el rango grave y debes revisar tus valores';
     }
 }
