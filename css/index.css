@@ -17,7 +17,7 @@ body {
 
 .container-section {
   width: 70%;
-  height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
