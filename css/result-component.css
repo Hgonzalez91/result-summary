@@ -12,6 +12,7 @@ section.result-component {
 }
 
 section.result-component-warning {
+  margin: 15px;
   width: inherit;
   padding: 20px 25px;
   display: flex;
@@ -24,6 +25,7 @@ section.result-component-warning {
 }
 
 section.result-component-danger {
+  margin: 15px;
   width: inherit;
   padding: 20px 25px;
   display: flex;
